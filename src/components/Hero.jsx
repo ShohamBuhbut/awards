@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import Button from "./Button.jsx";
 import {TiLocationArrow} from "react-icons/ti";
 import {useGSAP} from "@gsap/react";
@@ -124,7 +124,7 @@ const Hero = () => {
 
                     <video
                         src={getVideoSrc(currentIndex === currentIndex - 1 ? 1 : currentIndex)}
-                        // autoPlay
+                        autoPlay
                         loop
                         muted
                         className={'absolute left-0 top-0 size-full object-cover object-center'}
